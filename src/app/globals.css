@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@import "@fontsource/cormorant-garamond/400.css";
+@import "@fontsource/cormorant-garamond/500.css";
+@import "@fontsource/cormorant-garamond/600.css";
+@import "@fontsource/cormorant-garamond/300-italic.css";
+@import "@fontsource/montserrat/400.css";
+@import "@fontsource/montserrat/500.css";
+@import "@fontsource/montserrat/600.css";
+@import "@fontsource/montserrat/700.css";
+@import "@fontsource/pinyon-script/400.css";
+
+/*
+  Lucy's Coffee House — Design Tokens
+  ------------------------------------
+  Oat Cream background, Espresso Roast text, Warm Terracotta accent,
+  Warm Sand for dividers/blocks, Sage Green for veg/eco badges.
+*/
+
+:root {
+  --color-oat-cream: #FAF6F0;
+  --color-espresso: #3D2314;
+  --color-espresso-soft: #6B5849;
+  --color-terracotta: #C86D51;
+  --color-terracotta-dark: #B15A3F;
+  --color-sand: #E2D7C7;
+  --color-sage: #5A7052;
+  --color-card: #FFFFFF;
+}
+
+@theme inline {
+  --color-oat-cream: var(--color-oat-cream);
+  --color-espresso: var(--color-espresso);
+  --color-espresso-soft: var(--color-espresso-soft);
+  --color-terracotta: var(--color-terracotta);
+  --color-terracotta-dark: var(--color-terracotta-dark);
+  --color-sand: var(--color-sand);
+  --color-sage: var(--color-sage);
+  --color-card: var(--color-card);
+
+  --font-display: "Cormorant Garamond", serif;
+  --font-body: "Montserrat", sans-serif;
+  --font-script: "Pinyon Script", cursive;
+
+  --radius-card: 0.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-oat-cream);
+  color: var(--color-espresso);
+  font-family: var(--font-body);
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
