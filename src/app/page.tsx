@@ -1,9 +1,9 @@
-import Hero from "@/components/Hero";
-import Section from "@/components/Section";
-import CategoryCard from "@/components/CategoryCard";
-import DishCard from "@/components/DishCard";
-import Button from "@/components/Button";
-import { categories, featuredItems } from "@/data/menu";
+import Hero from "@/components/Hero"
+import Section from "@/components/Section"
+import CategoryCard from "@/components/CategoryCard"
+import DishCard from "@/components/DishCard"
+import Button from "@/components/Button"
+import { categories, featuredItems } from "@/data/menu"
 
 export default function Home() {
   return (
@@ -44,7 +44,7 @@ export default function Home() {
           <div className="rounded-[8px] overflow-hidden aspect-[4/3] bg-sand">
             <iframe
               title="Map to Lucy's Coffee House"
-              src="https://www.google.com/maps?q=Wells,UK&output=embed"
+              src="https://www.google.com/maps?q=Lucy's Coffee House&output=embed"
               className="h-full w-full border-0"
               loading="lazy"
             />
@@ -55,32 +55,32 @@ export default function Home() {
               <ul className="text-espresso-soft space-y-1">
                 <li className="flex justify-between max-w-xs">
                   <span>Mon – Fri</span>
-                  <span>7:30 – 16:00</span>
+                  <span>9:00 – 16:00</span>
                 </li>
                 <li className="flex justify-between max-w-xs">
                   <span>Saturday</span>
-                  <span>8:00 – 16:00</span>
+                  <span>9:00 – 16:00</span>
                 </li>
                 <li className="flex justify-between max-w-xs">
                   <span>Sunday</span>
-                  <span>9:00 – 15:00</span>
+                  <span>10:00 – 14:00</span>
                 </li>
               </ul>
             </div>
             <div>
               <h3 className="font-display text-2xl mb-2">Find Us</h3>
               <p className="text-espresso-soft">
-                14 Mill Lane, Riverside
+                Butterfield Dr, Eaglescliffe
                 <br />
-                Wells, WE1 2AB
+                Stockton-on-Tees, TS16 0FG
               </p>
             </div>
-            <Button href="tel:+441234567890" variant="primary">
+            <Button href="tel:+441642901392" variant="primary">
               Call Us
             </Button>
           </div>
         </div>
       </Section>
     </>
-  );
+  )
 }
