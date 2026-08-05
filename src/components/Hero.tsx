@@ -1,14 +1,14 @@
-"use client";
+"use client"
 
-import { motion } from "framer-motion";
-import DishImage from "./DishImage";
-import Button from "./Button";
+import { motion } from "framer-motion"
+import DishImage from "./DishImage"
+import Button from "./Button"
 
 export default function Hero() {
   return (
     <section className="relative h-[92vh] min-h-[560px] w-full overflow-hidden">
       <DishImage
-        src="/images/hero.jpg"
+        src="/images/hero.webp"
         alt="Warm morning light over coffee and fresh breakfast"
         className="absolute inset-0 h-full w-full"
         priority
@@ -31,7 +31,8 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.25 }}
           className="font-body text-sm md:text-base tracking-wide text-oat-cream/90 mb-8"
         >
-          Fresh Breakfast &nbsp;•&nbsp; Great Coffee &nbsp;•&nbsp; Homemade Cakes
+          Fresh Breakfast &nbsp;•&nbsp; Great Coffee &nbsp;•&nbsp; Homemade
+          Cakes
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -44,5 +45,5 @@ export default function Hero() {
         </motion.div>
       </div>
     </section>
-  );
+  )
 }
