@@ -1,4 +1,4 @@
-import { MenuItem, CategoryInfo } from "@/types/menu";
+import { MenuItem, CategoryInfo } from "@/types/menu"
 
 export const categories: CategoryInfo[] = [
   {
@@ -11,7 +11,7 @@ export const categories: CategoryInfo[] = [
   {
     id: "lunch",
     label: "Lunch",
-    tagline: "Sandwiches, soups & salads",
+    tagline: "Sandwiches, jaket potatos & salads",
     image: "/images/categories/lunch.jpg",
     href: "/menu/lunch",
   },
@@ -43,7 +43,7 @@ export const categories: CategoryInfo[] = [
     image: "/images/categories/kids.jpg",
     href: "/menu/kids",
   },
-];
+]
 
 export const menuItems: MenuItem[] = [
   // ---------------- ALL DAY BREAKFAST ----------------
@@ -51,10 +51,10 @@ export const menuItems: MenuItem[] = [
     id: "toast-butter-jam",
     category: "breakfast",
     title: "Toast with Butter and Jam",
-    description: "Thick-cut toast, salted butter and homemade jam.",
+    description: "Thick-cut toast, fresh butter and jam.",
     image: "/images/breakfast/toast-butter-jam.jpg",
     price: 4.0,
-    tags: ["VEG"],
+    tags: ["Popular"],
   },
   {
     id: "bun",
@@ -107,7 +107,8 @@ export const menuItems: MenuItem[] = [
     id: "eggs-on-toast",
     category: "breakfast",
     title: "Eggs on Toast",
-    description: "Two eggs — scrambled, poached or fried — on thick toast.",
+    description: "Two eggs — scrambled, poached or fried — on toast.",
+    // description: "Two eggs — scrambled, poached or fried — on thick toast.",
     image: "/images/breakfast/eggs-on-toast.jpg",
     price: 6.5,
     tags: ["VEG"],
@@ -116,7 +117,7 @@ export const menuItems: MenuItem[] = [
     id: "beans-on-toast",
     category: "breakfast",
     title: "Beans on Toast",
-    description: "Slow-cooked beans in a rich tomato sauce, on thick toast.",
+    description: "Caned beans in a rich tomato sauce, on thick toast.",
     image: "/images/breakfast/beans-on-toast.jpg",
     price: 5.5,
     tags: ["VEG"],
@@ -148,9 +149,9 @@ export const menuItems: MenuItem[] = [
     title: "Eggs Benedict Salmon",
     description:
       "Poached eggs, smoked salmon and avocado with hollandaise sauce on a toasted muffin.",
-    image: "/images/breakfast/eggs-benedict-salmon.jpg",
+    image: "/images/breakfast/eggs-benedict-salmon.webp",
     price: 13.5,
-    tags: ["Popular"],
+    tags: ["NEW"],
   },
   {
     id: "breakfast-waffle",
@@ -169,7 +170,7 @@ export const menuItems: MenuItem[] = [
     image: "/images/breakfast/pancakes.jpg",
     price: 5.5,
     featured: true,
-    tags: ["VEG", "Popular"],
+    tags: ["Popular"],
   },
 
   // ---------------- LUNCH ----------------
@@ -536,7 +537,8 @@ export const menuItems: MenuItem[] = [
     id: "tea-cake",
     category: "sweet-treats",
     title: "Tea Cake",
-    description: "Lightly spiced and studded with dried fruit, toasted on request.",
+    description:
+      "Lightly spiced and studded with dried fruit, toasted on request.",
     image: "/images/sweet-treats/tea-cake.jpg",
     price: 4.0,
     tags: ["VEG"],
@@ -545,7 +547,8 @@ export const menuItems: MenuItem[] = [
     id: "speciality-waffles",
     category: "sweet-treats",
     title: "Speciality Waffles",
-    description: "Warm waffle with ice cream, whipped cream and a topping sauce.",
+    description:
+      "Warm waffle with ice cream, whipped cream and a topping sauce.",
     image: "/images/sweet-treats/speciality-waffles.jpg",
     price: 6.75,
     featured: true,
@@ -589,14 +592,14 @@ export const menuItems: MenuItem[] = [
     image: "/images/kids/full-english.jpg",
     price: 7.5,
   },
-];
+]
 
-export const featuredItems = menuItems.filter((item) => item.featured);
+export const featuredItems = menuItems.filter((item) => item.featured)
 
 export function getItemsByCategory(category: string) {
-  return menuItems.filter((item) => item.category === category);
+  return menuItems.filter((item) => item.category === category)
 }
 
 export function getCategoryInfo(category: string) {
-  return categories.find((c) => c.id === category);
+  return categories.find((c) => c.id === category)
 }
