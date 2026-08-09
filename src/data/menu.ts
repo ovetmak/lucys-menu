@@ -182,7 +182,7 @@ export const menuItems: MenuItem[] = [
       "On white or brown bread, served with crisps, salad and coleslaw.",
     image: "/images/lunch/toastie.jpg",
     price: 8.0,
-    tags: ["Choose your filling"],
+    // tags: ["Choose your filling"],
   },
   {
     id: "sandwich",
@@ -192,7 +192,7 @@ export const menuItems: MenuItem[] = [
     image: "/images/lunch/sandwich-cheese-ham.jpg",
     price: 6.8,
     featured: true,
-    tags: ["Choose your filling"],
+    // tags: ["Choose your filling"],
     // tags: ["Popular"],
     // variants: [
     //   {
@@ -234,7 +234,7 @@ export const menuItems: MenuItem[] = [
     description: "Pressed and toasted, served with crisps, salad and coleslaw.",
     image: "/images/lunch/panini.jpg",
     price: 8.0,
-    tags: ["Choose your filling"],
+    // tags: ["Choose your filling"],
   },
   {
     id: "jacket-potato",
@@ -243,7 +243,8 @@ export const menuItems: MenuItem[] = [
     description: "Fluffy baked potato, served with salad.",
     image: "/images/lunch/jacket-potato.jpg",
     price: 8.0,
-    tags: ["Choose your filling", "VEG"],
+    tags: ["VEG"],
+    // tags: ["Choose your filling", "VEG"],
   },
   {
     id: "salad",
@@ -253,7 +254,8 @@ export const menuItems: MenuItem[] = [
       "Lettuce, red onions, tomatoes, cucumber and coleslaw, with your choice of filling.",
     image: "/images/lunch/salad.jpg",
     price: 7.8,
-    tags: ["Choose your filling", "VEG"],
+    tags: ["VEG"],
+    // tags: ["Choose your filling", "VEG"],
     // variants: [
     //   {
     //     id: "cheese",

@@ -11,7 +11,7 @@ const TAG_STYLES: Record<DietaryTag, string> = {
   "Contains Nuts": "bg-sand text-espresso-soft",
   Spicy: "bg-terracotta/10 text-terracotta-dark",
   "Hot or Iced": "bg-terracotta/10 text-terracotta-dark",
-  "Choose your filling": "bg-terracotta/10 text-terracotta-dark",
+  // "Choose your filling": "bg-terracotta/10 text-terracotta-dark",
 }
 
 export default function Badge({ tag }: { tag: DietaryTag }) {
