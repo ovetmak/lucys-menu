@@ -141,7 +141,7 @@ export const menuItems: MenuItem[] = [
       "Poached eggs, crispy bacon and hollandaise sauce on a toasted muffin.",
     image: "/images/breakfast/eggs-benedict-bacon.jpg",
     price: 9.5,
-    tags: ["Pork"],
+    tags: ["NEW", "Pork"],
   },
   {
     id: "eggs-benedict-salmon",
@@ -182,7 +182,7 @@ export const menuItems: MenuItem[] = [
       "On white or brown bread, served with crisps, salad and coleslaw.",
     image: "/images/lunch/toastie.jpg",
     price: 8.0,
-    tags: ["Popular"],
+    tags: ["Choose your filling"],
   },
   {
     id: "sandwich",
@@ -192,39 +192,40 @@ export const menuItems: MenuItem[] = [
     image: "/images/lunch/sandwich-cheese-ham.jpg",
     price: 6.8,
     featured: true,
-    tags: ["Popular"],
-    variants: [
-      {
-        id: "cheese",
-        label: "Cheese",
-        image: "/images/lunch/sandwich-cheese.jpg",
-        description: "Mature cheddar with butter and salad leaves.",
-      },
-      {
-        id: "ham",
-        label: "Ham",
-        image: "/images/lunch/sandwich-ham.jpg",
-        description: "Honey roast ham with butter and salad leaves.",
-      },
-      {
-        id: "cheese-ham",
-        label: "Cheese & Ham",
-        image: "/images/lunch/sandwich-cheese-ham.jpg",
-        description: "Mature cheddar and honey roast ham together.",
-      },
-      {
-        id: "tuna-mayo",
-        label: "Tuna Mayo",
-        image: "/images/lunch/sandwich-tuna.jpg",
-        description: "Flaked tuna in a creamy mayonnaise with cucumber.",
-      },
-      {
-        id: "chicken-tikka",
-        label: "Chicken Tikka",
-        image: "/images/lunch/sandwich-chicken-tikka.jpg",
-        description: "Spiced tikka chicken with a cool yoghurt dressing.",
-      },
-    ],
+    tags: ["Choose your filling"],
+    // tags: ["Popular"],
+    // variants: [
+    //   {
+    //     id: "cheese",
+    //     label: "Cheese",
+    //     image: "/images/lunch/sandwich-cheese.jpg",
+    //     description: "Mature cheddar with butter and salad leaves.",
+    //   },
+    //   {
+    //     id: "ham",
+    //     label: "Ham",
+    //     image: "/images/lunch/sandwich-ham.jpg",
+    //     description: "Honey roast ham with butter and salad leaves.",
+    //   },
+    //   {
+    //     id: "cheese-ham",
+    //     label: "Cheese & Ham",
+    //     image: "/images/lunch/sandwich-cheese-ham.jpg",
+    //     description: "Mature cheddar and honey roast ham together.",
+    //   },
+    //   {
+    //     id: "tuna-mayo",
+    //     label: "Tuna Mayo",
+    //     image: "/images/lunch/sandwich-tuna.jpg",
+    //     description: "Flaked tuna in a creamy mayonnaise with cucumber.",
+    //   },
+    //   {
+    //     id: "chicken-tikka",
+    //     label: "Chicken Tikka",
+    //     image: "/images/lunch/sandwich-chicken-tikka.jpg",
+    //     description: "Spiced tikka chicken with a cool yoghurt dressing.",
+    //   },
+    // ],
   },
   {
     id: "panini",
@@ -233,6 +234,7 @@ export const menuItems: MenuItem[] = [
     description: "Pressed and toasted, served with crisps, salad and coleslaw.",
     image: "/images/lunch/panini.jpg",
     price: 8.0,
+    tags: ["Choose your filling"],
   },
   {
     id: "jacket-potato",
@@ -241,7 +243,7 @@ export const menuItems: MenuItem[] = [
     description: "Fluffy baked potato, served with salad.",
     image: "/images/lunch/jacket-potato.jpg",
     price: 8.0,
-    tags: ["VEG", "GF"],
+    tags: ["Choose your filling", "VEG"],
   },
   {
     id: "salad",
@@ -249,35 +251,35 @@ export const menuItems: MenuItem[] = [
     title: "Salad",
     description:
       "Lettuce, red onions, tomatoes, cucumber and coleslaw, with your choice of filling.",
-    image: "/images/lunch/salad-cheese.jpg",
+    image: "/images/lunch/salad.jpg",
     price: 7.8,
-    tags: ["GF"],
-    variants: [
-      {
-        id: "cheese",
-        label: "Cheese",
-        image: "/images/lunch/salad-cheese.jpg",
-        description: "Mature cheddar over crisp salad leaves.",
-      },
-      {
-        id: "ham",
-        label: "Ham",
-        image: "/images/lunch/salad-ham.jpg",
-        description: "Honey roast ham over crisp salad leaves.",
-      },
-      {
-        id: "tuna",
-        label: "Tuna",
-        image: "/images/lunch/salad-tuna.jpg",
-        description: "Flaked tuna in mayonnaise over crisp salad leaves.",
-      },
-      {
-        id: "chicken-tikka",
-        label: "Chicken Tikka",
-        image: "/images/lunch/salad-chicken-tikka.jpg",
-        description: "Spiced tikka chicken over crisp salad leaves.",
-      },
-    ],
+    tags: ["Choose your filling", "VEG"],
+    // variants: [
+    //   {
+    //     id: "cheese",
+    //     label: "Cheese",
+    //     image: "/images/lunch/salad-cheese.jpg",
+    //     description: "Mature cheddar over crisp salad leaves.",
+    //   },
+    //   {
+    //     id: "ham",
+    //     label: "Ham",
+    //     image: "/images/lunch/salad-ham.jpg",
+    //     description: "Honey roast ham over crisp salad leaves.",
+    //   },
+    //   {
+    //     id: "tuna",
+    //     label: "Tuna",
+    //     image: "/images/lunch/salad-tuna.jpg",
+    //     description: "Flaked tuna in mayonnaise over crisp salad leaves.",
+    //   },
+    //   {
+    //     id: "chicken-tikka",
+    //     label: "Chicken Tikka",
+    //     image: "/images/lunch/salad-chicken-tikka.jpg",
+    //     description: "Spiced tikka chicken over crisp salad leaves.",
+    //   },
+    // ],
   },
   {
     id: "soup-of-the-day",
@@ -360,7 +362,7 @@ export const menuItems: MenuItem[] = [
     description: "Ceremonial-grade matcha whisked with steamed milk.",
     image: "/images/hot-drinks/matcha.jpg",
     price: 4.5,
-    tags: ["VEG"],
+    tags: ["Hot or Iced"],
   },
   {
     id: "tea",
@@ -510,7 +512,7 @@ export const menuItems: MenuItem[] = [
     id: "cake-of-the-day",
     category: "sweet-treats",
     title: "Slice of Cake",
-    description: "Ask us what's fresh from the oven today.",
+    description: "Ask us about today's dessert selection.",
     image: "/images/sweet-treats/cake.jpg",
     price: 3.95,
     featured: true,

@@ -39,11 +39,17 @@ export default function Footer() {
           <h4 className="font-body text-xs font-semibold uppercase tracking-widest text-oat-cream/50 mb-3">
             Visit
           </h4>
+
           <p className="font-body text-sm text-oat-cream/80 leading-relaxed">
-            Butterfield Dr, Eaglescliffe
-            <br />
-            Stockton-on-Tees, TS16 0FG
-            <br />
+            <a
+              href="https://maps.app.goo.gl/bJfpLFu6Z38TqJWz8"
+              className="hover:text-terracotta"
+            >
+              Butterfield Dr, Eaglescliffe
+              <br />
+              Stockton-on-Tees, TS16 0FG
+              <br />
+            </a>
             <a href="tel:+441642901392" className="hover:text-terracotta">
               01642 901 392
             </a>

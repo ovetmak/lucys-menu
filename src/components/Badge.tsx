@@ -1,5 +1,5 @@
-import { cn } from "@/lib/utils";
-import { DietaryTag } from "@/types/menu";
+import { cn } from "@/lib/utils"
+import { DietaryTag } from "@/types/menu"
 
 const TAG_STYLES: Record<DietaryTag, string> = {
   Popular: "bg-terracotta/10 text-terracotta-dark",
@@ -10,17 +10,19 @@ const TAG_STYLES: Record<DietaryTag, string> = {
   Pork: "bg-sand text-espresso-soft",
   "Contains Nuts": "bg-sand text-espresso-soft",
   Spicy: "bg-terracotta/10 text-terracotta-dark",
-};
+  "Hot or Iced": "bg-terracotta/10 text-terracotta-dark",
+  "Choose your filling": "bg-terracotta/10 text-terracotta-dark",
+}
 
 export default function Badge({ tag }: { tag: DietaryTag }) {
   return (
     <span
       className={cn(
         "inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-semibold tracking-wide uppercase font-body",
-        TAG_STYLES[tag]
+        TAG_STYLES[tag],
       )}
     >
       {tag}
     </span>
-  );
+  )
 }
