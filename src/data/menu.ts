@@ -364,7 +364,7 @@ export const menuItems: MenuItem[] = [
     description: "Ceremonial-grade matcha whisked with steamed milk.",
     image: "/images/hot-drinks/matcha.jpg",
     price: 4.5,
-    tags: ["Hot or Iced"],
+    // tags: ["Hot or Iced"],
   },
   {
     id: "tea",
