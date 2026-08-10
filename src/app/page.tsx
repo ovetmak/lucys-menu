@@ -8,7 +8,7 @@ import { categories, featuredItems } from "@/data/menu"
 export default function Home() {
   return (
     <>
-      <Hero />
+      {/* <Hero /> */}
 
       <Section
         eyebrow="Browse by Category"

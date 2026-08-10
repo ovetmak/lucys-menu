@@ -399,11 +399,21 @@ export const menuItems: MenuItem[] = [
   {
     id: "smoothie",
     category: "cold-drinks",
-    title: "Fruit Smoothie",
-    description: "Blended fresh fruit, no added sugar.",
+    title: "Signature Smoothie",
+    description:
+      "Keep cool and drink: Tropical, Berry, Mango & Strawberry, Banana & Strawberry.",
     image: "/images/cold-drinks/smoothie.jpg",
     price: 4.5,
     tags: ["VEGAN", "GF"],
+  },
+  {
+    id: "matcha-latte-iced",
+    category: "cold-drinks",
+    title: "Matcha Latte Iced",
+    description: "Ceremonial-grade matcha whisked with steamed milk on rocks.",
+    image: "/images/cold-drinks/matcha-iced.jpg",
+    price: 4.5,
+    // tags: ["Hot or Iced"],
   },
   {
     id: "juice",
@@ -442,7 +452,7 @@ export const menuItems: MenuItem[] = [
     id: "bottled-water",
     category: "cold-drinks",
     title: "Bottled Water",
-    description: "Still or sparkling, served chilled.",
+    description: "Still, spring, served chilled.",
     image: "/images/cold-drinks/water.jpg",
     price: 1.7,
     tags: ["VEGAN", "GF"],
